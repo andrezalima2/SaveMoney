@@ -1,12 +1,24 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import './App.css';
+import Sidebar from './shared/components/sidebar/sidebar';
+import Home from './pages/Home/Home'
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <h1>Está funcionando</h1>
-    </div>
+    <Router>
+      <Sidebar/>
+      <div className="main-content">
+        <div>
+          <Routes>
+            <Route element={<Home/>} path="/" />
+          </Routes>
+        </div>
+      </div>
+    </Router>
+      
   );
-}
+};
 
 export default App;

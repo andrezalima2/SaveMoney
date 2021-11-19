@@ -1,5 +1,5 @@
 import express from 'express';
-//import routes from './_config/routes.js';
+import routes from './_config/routes';
 import cors from 'cors';
 
 const app = express();
@@ -12,5 +12,5 @@ const corsOptions ={
 console.log("App rodando");
 
 app.use(cors(corsOptions));
-//app.use(routes);
+app.use(routes);
 app.listen(3333);
