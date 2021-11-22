@@ -1,13 +1,12 @@
 
 .divOverflow-categorias{
     width: 70vw;
-    height: 90vh;
+    height: 100vh;
     margin: 5% auto;
     padding: auto;
     z-index: 999;
-    background-color: #1a1a1aee;
-    box-shadow: 12px 12px 12px #1a1a1abe;
-    border-radius: 10px;
+    background: transparent;
+    border-radius: 12px;
 }
 
 .content-list-categoria {
@@ -32,22 +31,60 @@
     color: white;
 }
 
+.description-categoria{
+    height: 55%;
+}
+
+.divBtnVisu{
+    width: 100%;
+}
+
+.names-categoria, .divBtnVisu{
+    height: 50%;
+}
+
+.btnVisu{
+    width: 60%;
+    height: 40%;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.650);
+    transition: all 500ms linear;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.btnVisu:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+    margin-top: 4%;
+}
+
 .li-categoria{
     width: 30%;
+    height: 90%;
     margin: auto;
+    background-color: rgba(255, 255, 255, 0.300);
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.450);
+    border-radius: 10px;
 }
 
 .content-list-categoria, .ul-categoria1, .ul-categoria2, .li-categoria{
     list-style: none;
 }
-
+.card-categoria{
+    height: 100%;
+}
 .img-categoria{
     width: 100%;
-    height: 10%;
+    height: 45%;
 }
 .img-categoria img{
     width: 100%;
     height: 100%;
-    border-radius: 5px;
-    border: 2px solid rgba(0, 0, 0, 0.856);
+    border-radius: 10px;
+}
+
+.names-categoria p{
+    font-weight: 700;
 }

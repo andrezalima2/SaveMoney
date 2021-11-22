@@ -17,7 +17,7 @@ function SideBar() {
                     <FaIcons.FaBars onClick={showSideBar}/>
                 </div>
                 <div className="Image">
-                    <img srcSet="./images/logo.png" alt=""/>
+                    <img src="images/bgbk.png" alt="" />
                 </div>
             
             </div>
@@ -38,18 +38,16 @@ function SideBar() {
                     </li>
                     
                     <li className="side-item">
-                        <Link to="/contas-pagar">
-                            Contas a pagar
+                        <Link to="/contas">
+                            Contas
                         </Link>
                     </li>
                     
                     <li className="side-item">
-                        <Link to="/contas-receber">
-                            Contas a receber
+                        <Link to="/clientes">
+                            Clientes
                         </Link>
                     </li>
-                    
-                    
                 </ul>
             </nav>
         </IconContext.Provider>

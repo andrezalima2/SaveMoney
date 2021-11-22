@@ -13,15 +13,15 @@ function Home(){
                         <li className="li-categoria">
                             <div className="card-categoria">
                                 <div className="img-categoria">
-                                    <img src="/images/boloSimples.png" alt=""/>
+                                    <img src="/images/boloFuba.jpg" alt=""/>
                                 </div>
                                 <div className="description-categoria">
-                                    <div>
-                                        <p>Nome</p>
-                                        <p>Descrição</p>
+                                    <div className="names-categoria">
+                                        <p>Bolos</p>
+                                        <p>Bolo simples</p>
                                     </div>
-                                    <div>
-                                        <button>Visualizar</button>
+                                    <div className="divBtnVisu">
+                                        <button className="btnVisu">Visualizar</button>
                                     </div>
                                 </div>
                                 
@@ -29,32 +29,32 @@ function Home(){
                         </li>
                         <li className="li-categoria">
                             <div className="card-categoria">
-                            <div className="img-categoria">
-                                    <img src="/images/boloSimples.png" alt=""/>
+                                <div className="img-categoria">
+                                    <img src="/images/boloEspecial.jpg" alt=""/>
                                 </div>
                                 <div className="description-categoria">
-                                    <div>
-                                        <p>Nome</p>
-                                        <p>Descrição</p>
+                                    <div className="names-categoria">
+                                        <p>Bolos</p>
+                                        <p>Bolo especial</p>
                                     </div>
-                                    <div>
-                                        <button>Visualizar</button>
+                                    <div className="divBtnVisu">
+                                        <button className="btnVisu">Visualizar</button>
                                     </div>
                                 </div>
                             </div>
                         </li>
                         <li className="li-categoria">
                             <div className="card-categoria">
-                            <div className="img-categoria">
-                                    <img src="/images/boloSimples.png" alt=""/>
+                                <div className="img-categoria">
+                                    <img src="/images/boloPote.jpg" alt=""/>
                                 </div>
                                 <div className="description-categoria">
-                                    <div>
-                                        <p>Nome</p>
-                                        <p>Descrição</p>
+                                    <div className="names-categoria">
+                                        <p>Bolos</p>
+                                        <p>Bolo no pote</p>
                                     </div>
-                                    <div>
-                                        <button>Visualizar</button>
+                                    <div className="divBtnVisu">
+                                        <button className="btnVisu">Visualizar</button>
                                     </div>
                                 </div>
                             </div>
@@ -65,48 +65,48 @@ function Home(){
                     <ul className="ul-categoria2">
                         <li className="li-categoria">
                             <div className="card-categoria">
-                            <div className="img-categoria">
-                                    <img src="/images/boloSimples.png" alt=""/>
+                                <div className="img-categoria">
+                                    <img src="/images/cupcakes.png" alt=""/>
                                 </div>
                                 <div className="description-categoria">
-                                    <div>
-                                        <p>Nome</p>
-                                        <p>Descrição</p>
+                                    <div className="names-categoria">
+                                        <p>Cupcakes</p>
+                                        <p>Cupcakes variados</p>
                                     </div>
-                                    <div>
-                                        <button>Visualizar</button>
+                                    <div className="divBtnVisu">
+                                        <button className="btnVisu">Visualizar</button>
                                     </div>
                                 </div>
                             </div>
                         </li>
                         <li className="li-categoria">
                             <div className="card-categoria">
-                            <div className="img-categoria">
-                                    <img src="/images/boloSimples.png" alt=""/>
+                                <div className="img-categoria">
+                                    <img src="/images/sobremesas.png" alt=""/>
                                 </div>
                                 <div className="description-categoria">
-                                    <div>
-                                        <p>Nome</p>
-                                        <p>Descrição</p>
+                                    <div className="names-categoria">
+                                        <p>Sobremesas</p>
+                                        <p>Sobremesas diversas</p>
                                     </div>
-                                    <div>
-                                        <button>Visualizar</button>
+                                    <div className="divBtnVisu">
+                                        <button className="btnVisu">Visualizar</button>
                                     </div>
                                 </div>
                             </div>
                         </li>
                         <li className="li-categoria">
                             <div className="card-categoria">
-                            <div className="img-categoria">
-                                    <img src="/images/boloSimples.png" alt=""/>
+                                <div className="img-categoria">
+                                    <img src="/images/docinhos.png" alt=""/>
                                 </div>
                                 <div className="description-categoria">
-                                    <div>
-                                        <p>Nome</p>
-                                        <p>Descrição</p>
+                                    <div className="names-categoria">
+                                        <p>Docinhos</p>
+                                        <p>Docinhos de festa</p>
                                     </div>
-                                    <div>
-                                        <button>Visualizar</button>
+                                    <div className="divBtnVisu">
+                                        <button className="btnVisu">Visualizar</button>
                                     </div>
                                 </div>
                             </div>
