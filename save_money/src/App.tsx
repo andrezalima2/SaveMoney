@@ -4,8 +4,9 @@ import './App.css';
 import Sidebar from './shared/components/sidebar/sidebar';
 import Home from './pages/Home/Home';
 import Clientes from './pages/Clientes/Clientes';
-import Produtos from './pages/Produtos/Produtos';
+import CadProd from './pages/Produtos/Cadastro/CadProd';
 import Pedidos from './pages/Pedidos/Pedidos';
+import Contas from './pages/Contas/Contas';
 
 
 const App = () => {
@@ -17,8 +18,9 @@ const App = () => {
           <Routes>
             <Route element={<Home/>} path="/" />
             <Route element={<Clientes/>} path="/clientes"/>
-            <Route element={<Produtos/>} path="/produtos"/>
+            <Route element={<CadProd/>} path="/cadastro-produtos"/>
             <Route element={<Pedidos/>} path="/pedidos"/>
+            <Route element={<Contas/>} path="/contas"/>
           </Routes>
         </div>
       </div>

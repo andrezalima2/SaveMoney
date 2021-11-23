@@ -4,12 +4,12 @@ import "./Pedidos.css"
 function Pedidos(){
 
     return(
-        <form className="form-style-7" id="productForm">
+        <form className="form-style-Order" id="orderForm">
             <ul>
                 <h3>Cadastro de Pedidos</h3>
                 <li>
                     <label htmlFor="categories">Selecione o produto:</label>
-                    <select name="categories" id="categories" form="productForm">
+                    <select name="categories" id="categories" form="orderForm">
                         <option value="1">Bolo de Laranja</option>
                         <option value="2">Bolo de Fubá</option>
                         <option value="3">Brigadeiros</option>

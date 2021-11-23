@@ -30,6 +30,12 @@ function SideBar() {
                             Página inicial
                         </Link>
                     </li>
+
+                    <li className="side-item">
+                        <Link to="/cadastro-produtos">
+                            Novos produtos
+                        </Link>
+                    </li>
                     
                     <li className="side-item">
                         <Link to="/pedidos" >

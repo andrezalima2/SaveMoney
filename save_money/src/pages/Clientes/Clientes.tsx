@@ -4,7 +4,7 @@ import "./Clientes.css"
 function Clientes(){
 
     return(
-        <form className="form-style-7">
+        <form className="form-style-Client">
             <ul>
                 <h3>Cadastro de Clientes</h3>
                 <li>

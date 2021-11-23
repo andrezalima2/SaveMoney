@@ -1,4 +1,4 @@
-.form-style-7{
+.form-style-Client{
 	max-width: 60vw;
     height: 60vh;
 	margin: 80px auto;
@@ -7,7 +7,7 @@
 	border-radius:10px;
 	padding:20px;
 }
-.form-style-7 h1{
+.form-style-Client h1{
 	display: block;
 	text-align: center;
 	padding: 0;
@@ -15,25 +15,25 @@
 	color: #111111;
 	font-size:x-large;
 }
-.form-style-7 ul{
+.form-style-Client ul{
     height: 100%;
 	list-style:none;
 	padding:0;
 	margin:0;	
 }
-.form-style-7 li{
+.form-style-Client li{
 	display: block;
 	padding: 9px;
 	border:1px solid #DDDDDD;
     margin: 3%;
 	border-radius: 8px;
 }
-.form-style-7 li:last-child{
+.form-style-Client li:last-child{
 	border:none;
 	margin-bottom: 0px;
 	text-align: center;
 }
-.form-style-7 li > label{
+.form-style-Client li > label{
 	display: block;
 	float: left;
 	margin-top: -19px;
@@ -42,17 +42,17 @@
 	font-size: 14px;
 	overflow: hidden;
 }
-.form-style-7 input[type="text"],
-.form-style-7 input[type="date"],
-.form-style-7 input[type="datetime"],
-.form-style-7 input[type="email"],
-.form-style-7 input[type="number"],
-.form-style-7 input[type="search"],
-.form-style-7 input[type="time"],
-.form-style-7 input[type="url"],
-.form-style-7 input[type="password"],
-.form-style-7 textarea,
-.form-style-7 select 
+.form-style-Client input[type="text"],
+.form-style-Client input[type="date"],
+.form-style-Client input[type="datetime"],
+.form-style-Client input[type="email"],
+.form-style-Client input[type="number"],
+.form-style-Client input[type="search"],
+.form-style-Client input[type="time"],
+.form-style-Client input[type="url"],
+.form-style-Client input[type="password"],
+.form-style-Client textarea,
+.form-style-Client select 
 {
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -67,7 +67,7 @@
 	padding: 0;
 }
 
-.form-style-7 li > span{
+.form-style-Client li > span{
 	display: block;
 	padding: 3px;
 	margin: 0 -9px -9px -9px;
@@ -75,11 +75,11 @@
     color: #2c2c2c;
 	font-size: 12px;
 }
-.form-style-7 textarea{
+.form-style-Client textarea{
 	resize:none;
 }
-.form-style-7 input[type="submit"],
-.form-style-7 input[type="button"]{
+.form-style-Client input[type="submit"],
+.form-style-Client input[type="button"]{
 	background: #6150ff;
 	border: none;
 	margin-top: 16px;
@@ -87,8 +87,8 @@
 	border-radius: 5px;
     color: white;
 }
-.form-style-7 input[type="submit"]:hover,
-.form-style-7 input[type="button"]:hover{
+.form-style-Client input[type="submit"]:hover,
+.form-style-Client input[type="button"]:hover{
 	background: #8072ff;
     cursor: pointer;
     color: white;

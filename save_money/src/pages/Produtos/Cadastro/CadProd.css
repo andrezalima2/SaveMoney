@@ -1,4 +1,4 @@
-.form-style-Order{
+.form-style-Product{
 	max-width: 60vw;
     height: 70vh;
 	margin: 80px auto;
@@ -7,7 +7,7 @@
 	border-radius:10px;
 	padding:20px;
 }
-.form-style-Order h1{
+.form-style-Product h1{
 	display: block;
 	text-align: center;
 	padding: 0;
@@ -15,25 +15,25 @@
 	color: #111111;
 	font-size:x-large;
 }
-.form-style-Order ul{
+.form-style-Product ul{
     height: 100%;
 	list-style:none;
 	padding:0;
 	margin:0;	
 }
-.form-style-Order li{
+.form-style-Product li{
 	display: block;
 	padding: 9px;
 	border:1px solid #DDDDDD;
     margin: 3%;
 	border-radius: 8px;
 }
-.form-style-Order li:last-child{
+.form-style-Product li:last-child{
 	border:none;
 	margin-bottom: 0px;
 	text-align: center;
 }
-.form-style-Order li > label{
+.form-style-Product li > label{
 	display: block;
 	float: left;
 	margin-top: -19px;
@@ -42,17 +42,17 @@
 	font-size: 14px;
 	overflow: hidden;
 }
-.form-style-Order input[type="text"],
-.form-style-Order input[type="date"],
-.form-style-Order input[type="datetime"],
-.form-style-Order input[type="email"],
-.form-style-Order input[type="number"],
-.form-style-Order input[type="search"],
-.form-style-Order input[type="time"],
-.form-style-Order input[type="url"],
-.form-style-Order input[type="password"],
-.form-style-Order textarea,
-.form-style-Order select 
+.form-style-Product input[type="text"],
+.form-style-Product input[type="date"],
+.form-style-Product input[type="datetime"],
+.form-style-Product input[type="email"],
+.form-style-Product input[type="number"],
+.form-style-Product input[type="search"],
+.form-style-Product input[type="time"],
+.form-style-Product input[type="url"],
+.form-style-Product input[type="password"],
+.form-style-Product textarea,
+.form-style-Product select 
 {
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -67,7 +67,7 @@
 	padding: 0;
 }
 
-.form-style-Order li > span{
+.form-style-Product li > span{
 	display: block;
 	padding: 3px;
 	margin: 0 -9px -9px -9px;
@@ -75,11 +75,11 @@
     color: #2c2c2c;
 	font-size: 12px;
 }
-.form-style-Order textarea{
+.form-style-Product textarea{
 	resize:none;
 }
-.form-style-Order input[type="submit"],
-.form-style-Order input[type="button"]{
+.form-style-Product input[type="submit"],
+.form-style-Product input[type="button"]{
 	background: #6150ff;
 	border: none;
     margin-top: 16px;
@@ -87,8 +87,8 @@
 	border-radius: 5px;
     color: white;
 }
-.form-style-Order input[type="submit"]:hover,
-.form-style-Order input[type="button"]:hover{
+.form-style-Product input[type="submit"]:hover,
+.form-style-Product input[type="button"]:hover{
 	background: #8072ff;
     cursor: pointer;
     color: white;

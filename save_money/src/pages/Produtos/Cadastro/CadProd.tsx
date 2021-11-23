@@ -1,10 +1,10 @@
 import React from "react";
-import "./Produtos.css"
+import "./CadProd.css"
 
-function Produtos(){
+function CadProd(){
 
     return(
-        <form className="form-style-7" id="productForm">
+        <form className="form-style-Product" id="productForm">
             <ul>
                 <h3>Cadastro de Produtos</h3>
                 <li>
@@ -47,4 +47,4 @@ function Produtos(){
     )
 }
 
-export default Produtos;
+export default CadProd;
