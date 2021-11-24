@@ -7,6 +7,7 @@ import Clientes from './pages/Clientes/Clientes';
 import CadProd from './pages/Produtos/Cadastro/CadProd';
 import Pedidos from './pages/Pedidos/Pedidos';
 import Contas from './pages/Contas/Contas';
+import VisuProd from './pages/Visualização/VisuProd';
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
             <Route element={<CadProd/>} path="/cadastro-produtos"/>
             <Route element={<Pedidos/>} path="/pedidos"/>
             <Route element={<Contas/>} path="/contas"/>
+            <Route element={<VisuProd/>} path="/visu-prod"/>
           </Routes>
         </div>
       </div>
