@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Home.css"
 
 function Home(){
@@ -21,7 +22,9 @@ function Home(){
                                         <p>Bolo simples</p>
                                     </div>
                                     <div className="divBtnVisu">
-                                        <button className="btnVisu">Visualizar</button>
+                                        <Link to="/visu-produtos">
+                                            <button className="btnVisu">Visualizar</button>
+                                        </Link>
                                     </div>
                                 </div>
                                 
@@ -38,7 +41,9 @@ function Home(){
                                         <p>Bolo especial</p>
                                     </div>
                                     <div className="divBtnVisu">
-                                        <button className="btnVisu">Visualizar</button>
+                                        <Link to="/visu-produtos">
+                                            <button className="btnVisu">Visualizar</button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -54,7 +59,9 @@ function Home(){
                                         <p>Bolo no pote</p>
                                     </div>
                                     <div className="divBtnVisu">
-                                        <button className="btnVisu">Visualizar</button>
+                                        <Link to="/visu-produtos">
+                                            <button className="btnVisu">Visualizar</button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -74,7 +81,9 @@ function Home(){
                                         <p>Cupcakes variados</p>
                                     </div>
                                     <div className="divBtnVisu">
-                                        <button className="btnVisu">Visualizar</button>
+                                        <Link to="/visu-produtos">
+                                            <button className="btnVisu">Visualizar</button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -90,7 +99,9 @@ function Home(){
                                         <p>Sobremesas diversas</p>
                                     </div>
                                     <div className="divBtnVisu">
-                                        <button className="btnVisu">Visualizar</button>
+                                        <Link to="/visu-produtos">
+                                            <button className="btnVisu">Visualizar</button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -106,7 +117,9 @@ function Home(){
                                         <p>Docinhos de festa</p>
                                     </div>
                                     <div className="divBtnVisu">
-                                        <button className="btnVisu">Visualizar</button>
+                                        <Link to="/visu-produtos">
+                                            <button className="btnVisu">Visualizar</button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

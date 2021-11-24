@@ -3,7 +3,35 @@ import "./VisuProd.css"
 
 function VisuProd(){
     return(
-        <h1>Olá mundo</h1>
+        <div className="form-style-List">
+                <ul>
+                    <h3>Listagem de Produtos (categoryName)</h3>
+                        <li>
+                            <label htmlFor="name">Produto:</label>
+                            <label htmlFor="name">Preço:</label>
+                        </li>
+                        <li>
+                            <label htmlFor="name">Produto:</label>
+                            <label htmlFor="name">Preço:</label>
+                        </li>
+                        <li>
+                            <label htmlFor="name">Produto:</label>
+                            <label htmlFor="name">Preço:</label>
+                        </li>
+                        <li>
+                            <label htmlFor="name">Produto:</label>
+                            <label htmlFor="name">Preço:</label>
+                        </li>
+                        <li>
+                            <label htmlFor="name">Produto:</label>
+                            <label htmlFor="name">Preço:</label>
+                        </li>
+                        <li>
+                            <label htmlFor="name">Produto:</label>
+                            <label htmlFor="name">Preço:</label>
+                        </li>
+                </ul>
+        </div>
     )
 }
 

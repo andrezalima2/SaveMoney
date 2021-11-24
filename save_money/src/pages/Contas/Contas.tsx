@@ -39,14 +39,14 @@ function Contas(){
 
             </form>
 
-            <form className="form-style-Dashboard">
+            <div className="form-style-Dashboard">
                 <ul>
                     <h3>Dashboard de Contas</h3>
                 </ul>
                 <ul>
-                    <h3>Dashboard de lucro</h3>
+                    <h3>Dashboard de Lucro</h3>
                 </ul>
-            </form>
+            </div>
         </>
     )
 }

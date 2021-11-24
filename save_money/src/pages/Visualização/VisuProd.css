@@ -1,0 +1,25 @@
+.form-style-List{
+    max-width: 96vh;
+    height: 86vh;
+	margin: 48px auto;
+	background-color: rgba(255, 255, 255, 0.300);
+    box-shadow: 8px 8px 24px rgba(22, 44, 166, 0.46);
+	border-radius:10px;
+	padding: 6px;
+    display: flex;
+}
+.form-style-List ul{
+    align-items: flex-start;
+    height: fit-content;
+	list-style: none;
+}
+.form-style-List li{
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+	padding: 20px;
+    background-color: white;
+    box-shadow: 4px 4px 16px rgba(102, 20, 256, 0.24);
+    margin: 6% auto;
+	border-radius: 8px;
+}
