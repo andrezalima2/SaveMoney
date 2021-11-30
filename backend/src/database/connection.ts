@@ -1,16 +1,32 @@
-async function connect(){
+const mysql = require('mysql2');
 
-    if(globalThis.connection && globalThis.connection.state !== 'disconnected'){
-        return globalThis.connection;
+const db_connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    database: 'savemoney',
+    password:''
+});
+
+function connect(db_connection: any){
+    try{
+        db_connection
+        console.log("Connected");
     }
-
-    const mysql = require("mysql2/promise");
-    const connection = await mysql.createConnection("mysql://server:Trfc67.mls6c@192.168.235.21/testeSave");
-    console.log("Conectou no Mysql");
-    globalThis.connection = connection;
-    return connection
+    catch(err){
+        console.log(err);
+    }
 }
 
-connect();
+async function simpleQuery(query: any) {
+    const result = await db_connection.promise().query(query)
+    return result[0]
+}
 
-module.exports = {connect}
+async function valuedQuery(query: any, values: any){
+    const result = await db_connection.promise().query(query, values)
+    return result[0]
+}
+
+connect(db_connection)
+
+module.exports = {connect, simpleQuery, valuedQuery}

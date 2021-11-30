@@ -1,9 +1,9 @@
-import {Router} from 'express';
-const userController = require('../features/controller/userController')
+import { Router } from 'express';
+import productController from '../features/controller/productController';
 
 const routes = Router();
 
-routes.get("/api/user", userController.selectAllClient);
-
+routes.get("/api/products", productController.selectAll)
+routes.post("/api/product", productController.insertProducts)
 
 export default routes;
