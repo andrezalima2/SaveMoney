@@ -7,6 +7,14 @@ async function selectAllProducts(){
     return rows;
 }
 
+async function selectTargetProducts(id_prod: any){
+
+    const sql = 'SELECT * FROM produtos WHERE id_prod = ?';
+    const values = [id_prod];
+    const rows = await productConn.valuedQuery(sql, values);
+    return rows;
+}
+
 async function insertProducts(id_categoria: any, nome_prod: any, custo: any, preco_venda: any){
 
     const sql = 'INSERT INTO produtos(id_categoria, nome_prod, custo, preco_venda) values(?, ?, ?, ?)';
@@ -31,4 +39,4 @@ async function deleteProducts(id_prod: any){
     return rows;
 }
 
-module.exports = { selectAllProducts, insertProducts, updateProducts, deleteProducts }
+module.exports = { selectAllProducts, selectTargetProducts, insertProducts, updateProducts, deleteProducts }
