@@ -9,9 +9,10 @@ const routes = Router();
 
 routes.get("/api/products", productController.selectAllProducts)
 routes.get("/api/product:id_prod", productController.selectTargetProducts)
+routes.get("/api/products/categorie/:id_cat", productController.selectProdPerCategorie)
 routes.post("/api/products", productController.insertProducts)
-routes.put("/api/product:id_prod", productController.updateProducts)
-routes.delete("/api/product:id_prod", productController.deleteProducts)
+routes.put("/api/product/:id_prod", productController.updateProducts)
+routes.delete("/api/product/:id_prod", productController.deleteProducts)
 
 routes.get("/api/client:id_cpf", clientController.selectTargetClient)
 routes.post("/api/clients", clientController.insertClients)

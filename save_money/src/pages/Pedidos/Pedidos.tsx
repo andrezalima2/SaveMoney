@@ -1,7 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import api from "../../services/api";
 import "./Pedidos.css"
 
+interface Produto{
+    [x: string]: any;
+    id_prod: any,
+    nome_prod: any,
+}
+
 function Pedidos(){
+
+    const [produtos, setProduto] = useState<Produto>();
+
+    useEffect(() => {
+        api.get(`/api/products`).then(response => {
+          setProduto(response.data.products);
+        });
+    });
+
+    if(!produtos){
+        return <p>Carregando...</p>;
+    }
 
     return(
         <form className="form-style-Order" id="orderForm">
@@ -10,10 +29,11 @@ function Pedidos(){
                 <li>
                     <label htmlFor="categories">Selecione o produto:</label>
                     <select name="categories" id="categories" form="orderForm">
-                        <option value="1">Bolo de Laranja</option>
-                        <option value="2">Bolo de Fubá</option>
-                        <option value="3">Brigadeiros</option>
-                        <option value="4">Beijinhos</option>
+                        {produtos.map((produto: any) => {
+                            return(
+                                <option value={produto.id_prod}>{produto.nome_prod}</option>
+                            )
+                        })}
                     </select>
                 </li>
                 <li>

@@ -22,7 +22,7 @@ function Home(){
                                         <p>Bolo simples</p>
                                     </div>
                                     <div className="divBtnVisu">
-                                        <Link to="/visu-produtos">
+                                        <Link to="/visu-produtos/1">
                                             <button className="btnVisu">Visualizar</button>
                                         </Link>
                                     </div>
@@ -41,7 +41,7 @@ function Home(){
                                         <p>Bolo especial</p>
                                     </div>
                                     <div className="divBtnVisu">
-                                        <Link to="/visu-produtos">
+                                        <Link to="/visu-produtos/2">
                                             <button className="btnVisu">Visualizar</button>
                                         </Link>
                                     </div>
@@ -59,7 +59,7 @@ function Home(){
                                         <p>Bolo no pote</p>
                                     </div>
                                     <div className="divBtnVisu">
-                                        <Link to="/visu-produtos">
+                                        <Link to="/visu-produtos/3">
                                             <button className="btnVisu">Visualizar</button>
                                         </Link>
                                     </div>
@@ -81,7 +81,7 @@ function Home(){
                                         <p>Cupcakes variados</p>
                                     </div>
                                     <div className="divBtnVisu">
-                                        <Link to="/visu-produtos">
+                                        <Link to="/visu-produtos/4">
                                             <button className="btnVisu">Visualizar</button>
                                         </Link>
                                     </div>
@@ -99,7 +99,7 @@ function Home(){
                                         <p>Sobremesas diversas</p>
                                     </div>
                                     <div className="divBtnVisu">
-                                        <Link to="/visu-produtos">
+                                        <Link to="/visu-produtos/6">
                                             <button className="btnVisu">Visualizar</button>
                                         </Link>
                                     </div>
@@ -117,7 +117,7 @@ function Home(){
                                         <p>Docinhos de festa</p>
                                     </div>
                                     <div className="divBtnVisu">
-                                        <Link to="/visu-produtos">
+                                        <Link to="/visu-produtos/5">
                                             <button className="btnVisu">Visualizar</button>
                                         </Link>
                                     </div>

@@ -11,13 +11,6 @@ function Clientes(){
 
     async function handleSubmit(event: FormEvent<HTMLFormElement>){
         event.preventDefault();
-    
-        const data = new FormData();
-    
-        data.append('name', String(name));
-        data.append('address', String(address));
-        data.append('cpf', String(cpf));
-        data.append('contact', String(contact));
 
         const dados = {name: name, cpf: cpf, address: address, contact: contact};
     

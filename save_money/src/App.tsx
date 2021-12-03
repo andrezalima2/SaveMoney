@@ -22,7 +22,7 @@ const App = () => {
             <Route element={<CadProd/>} path="/cadastro-produtos"/>
             <Route element={<Pedidos/>} path="/pedidos"/>
             <Route element={<Contas/>} path="/contas"/>
-            <Route element={<VisuProd/>} path="/visu-produtos"/>
+            <Route element={<VisuProd/>} path="/visu-produtos/:id_categoria"/>
           </Routes>
         </div>
       </div>

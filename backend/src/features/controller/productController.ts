@@ -36,13 +36,17 @@ export default{
     async insertProducts(request: Request, response: Response){
 
         const{
-            id_categoria,
-            nome_prod,
-            custo,
-            preco_venda
+            name,
+            cost,
+            sellingprice,
+            categories
         } = request.body;
 
-        const products = await productModel.insertProducts(id_categoria, nome_prod, custo, preco_venda);
+        console.log(request.body)
+
+        const categoria = parseInt(categories)
+
+        const products = await productModel.insertProducts(categoria, name, cost, sellingprice);
         if (products){
             response.json({
                 status: "200",
@@ -89,7 +93,9 @@ export default{
             id_prod
         } = request.params;
 
-        const products = await productModel.deleteProducts(id_prod)
+        const id_produto = parseInt(id_prod)
+
+        const products = await productModel.deleteProducts(id_produto)
         if (products){
             response.json({
                 status: "200",
@@ -101,5 +107,28 @@ export default{
                 message: "erro ao deletar"
             })
         }
-    }    
+    },
+    
+    async selectProdPerCategorie(request: Request, response: Response){
+        const{
+            id_cat
+        } = request.params
+
+        const id_categoria = parseInt(id_cat)
+
+        const products = await productModel.selectProdPerCategorie(id_categoria)
+        console.log(products)
+        if (products){
+            response.json({
+                status: "200",
+                message: "produtos encontrados",
+                produtos: products
+            })
+        } else{
+            response.json({
+                status: "500",
+                message: "erro ao listar"
+            })
+        }
+    }
 }
