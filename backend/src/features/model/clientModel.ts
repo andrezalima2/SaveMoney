@@ -1,5 +1,11 @@
 const clientConn = require('../../database/connection')
 
+async function selectAllClients(){
+    const sql = 'SELECT * FROM clientes'
+    const rows = await clientConn.simpleQuery(sql);
+    return rows;
+}
+
 async function selectTargetClient(id_cpf: any){
 
     const sql = 'SELECT * FROM clientes WHERE id_cpf = ?';
@@ -24,4 +30,4 @@ async function updateClients(id_cpf: any, nome_cliente: any, endereco: any, tele
     return rows;
 }
 
-module.exports = { selectTargetClient, insertClients, updateClients }
+module.exports = { selectTargetClient, insertClients, updateClients, selectAllClients }

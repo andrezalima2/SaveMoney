@@ -1,5 +1,7 @@
 import { Request, Response } from 'express';
-const orderModel = require('../model/orderModel')
+const orderModel = require('../model/orderModel');
+const pedidosClienteModel = require('../model/clientModel');
+const pedidosProdutoModel = require('../model/productModel');
 
 export default{
 
@@ -13,6 +15,19 @@ export default{
             })
         }else{
             console.log("erro ao procurar")
+        }
+    },
+
+    async selectOptions(request: Request, response: Response){
+
+        const prods = await pedidosProdutoModel.selectAllProducts()
+        const clients = await pedidosClienteModel.selectAllClients()
+
+        if(clients && prods){
+            response.json({
+                produtos: prods,
+                clientes: clients
+            })
         }
     },
 
@@ -95,12 +110,12 @@ export default{
         if (orders){
             response.json({
                 status: "200",
-                message: "pedido deletado"
+                message: "Pedido deletado!"
             })
         } else{
             response.json({
                 status: "500",
-                message: "erro ao deletar"
+                message: "Erro ao deletar!"
             })
         }
     }    

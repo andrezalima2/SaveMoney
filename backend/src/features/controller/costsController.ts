@@ -42,7 +42,9 @@ export default{
             custo_despesa
         } = request.body;
 
-        const costs = await costsModel.insertCosts(id_categoria, nome_despesa, descricao_despesa, custo_despesa);
+        const categoria = parseInt(id_categoria);
+
+        const costs = await costsModel.insertCosts(categoria, nome_despesa, descricao_despesa, custo_despesa);
         if (costs){
             response.json({
                 status: "200",

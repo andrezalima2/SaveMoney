@@ -13,7 +13,6 @@ interface Produto{
     preco_venda: any
 }
 
-
 function VisuProd(){
 
     const { id_categoria } = useParams() as { 
@@ -35,12 +34,9 @@ function VisuProd(){
         });
     }
     
-    
     if(!produtos){
         return <p>Carregando...</p>;
     }
-
-    
     
     return(
         <div className="form-style-List">
@@ -51,18 +47,13 @@ function VisuProd(){
                             <li>
                                 <div className="label-content-prod">
                                     <label> <strong>Produto: </strong>{produto.nome_prod}</label>
-                                    <label> <strong>Custo: </strong>{produto.custo}</label>
-                                    <label> <strong>Preço de venda: </strong>{produto.preco_venda}</label>
+                                    <label> <strong>Custo: </strong>R${produto.custo}</label>
+                                    <label> <strong>Preço de venda: </strong>R${produto.preco_venda}</label>
                                 </div>
                                 <div className="btn-prod">
                                     <Link to="" className="link-btn-prod">
                                         <button onClick={() => deleteProd(produto.id_prod)}>
                                             Deletar
-                                        </button>
-                                    </Link>
-                                    <Link to="" className="link-btn-prod">
-                                        <button>
-                                            Editar
                                         </button>
                                     </Link>
                                 </div>

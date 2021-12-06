@@ -4,6 +4,21 @@ const clientModel = require('../model/clientModel')
 
 export default{
 
+    async selectAllClients(request: Request, response: Response){
+
+        console.log(request.body)
+
+        const clients = await clientModel.selectAllClients();
+        
+        if(clients){
+            response.json({
+                clients: clients
+            })
+        } else{
+            console.log("erro ao consultar clientes")
+        }
+    },
+
     async selectTargetClient(request: Request, response: Response){
 
         const{

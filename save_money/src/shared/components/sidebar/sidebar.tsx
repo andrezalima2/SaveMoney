@@ -36,16 +36,28 @@ function SideBar() {
                             Novos produtos
                         </Link>
                     </li>
-                    
+
                     <li className="side-item">
-                        <Link to="/pedidos" >
-                            Pedidos
+                        <Link to="/novas-contas">
+                            Novas contas
                         </Link>
                     </li>
                     
                     <li className="side-item">
-                        <Link to="/contas">
-                            Contas
+                        <Link to="/pedidos" >
+                            Novos pedidos
+                        </Link>
+                    </li>
+                    
+                    <li className="side-item">
+                        <Link to="/visualizar-contas">
+                            Lista de Contas
+                        </Link>
+                    </li>
+
+                    <li className="side-item">
+                        <Link to="/visualizar-pedidos">
+                            Lista de Pedidos
                         </Link>
                     </li>
                     
