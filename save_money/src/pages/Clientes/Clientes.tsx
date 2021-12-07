@@ -1,4 +1,6 @@
+/* eslint-disable no-restricted-globals */
 import React, { FormEvent, useState } from 'react';
+import swal from 'sweetalert';
 import api from '../../services/api';
 import "./Clientes.css";
 
@@ -16,10 +18,11 @@ function Clientes(){
     
         await api.post('/api/clients', dados).then(res => {
             if(res){
-                alert("Cadastro efetuado!")
-                window.location.reload()
+                swal("Maravilha!", "Cadastro efetuado com sucesso.", "success");
+                window.setTimeout(function(){location.reload()}, 3000)
             }else{
-                alert("Cadastro não efetuado")
+                swal("Erro!", "O cadastro não foi efetuado.", "error");
+                window.setTimeout(function(){location.reload()}, 3000)
             }
         });
     }
@@ -49,7 +52,7 @@ function Clientes(){
                     <span>Insira o telefone</span>
                 </li>
                 <li>
-                    <input type="submit" value="Confirmar cadastro" />
+                    <input type="submit" value="Confirmar cadastro"/>
                 </li>
             </ul>
         </form>

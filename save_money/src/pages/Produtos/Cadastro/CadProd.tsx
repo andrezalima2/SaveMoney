@@ -1,4 +1,6 @@
+/* eslint-disable no-restricted-globals */
 import React, { FormEvent, useState } from "react";
+import swal from "sweetalert";
 import api from "../../../services/api";
 import "./CadProd.css"
 
@@ -16,10 +18,11 @@ function CadProd(){
     
         await api.post('/api/products', dados).then(res => {
             if(res){
-                alert("Cadastro efetuado!")
-                window.location.reload()
+                swal("Maravilha!", "O produto foi cadastrado com sucesso.", "success");
+                window.setTimeout(function(){location.reload()}, 3000)
             }else{
-                alert("Cadastro não efetuado")
+                swal("Erro!", "O produto não foi cadastrado.", "error");
+                window.setTimeout(function(){location.reload()}, 3000)
             }
         });
     }

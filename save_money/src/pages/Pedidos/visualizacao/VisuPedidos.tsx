@@ -1,5 +1,7 @@
+/* eslint-disable no-restricted-globals */
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import swal from "sweetalert";
 import api from "../../../services/api";
 import "./VisuPedidos.css"
 
@@ -26,8 +28,8 @@ function VisuPedidos(){
     async function deleteOrders(id_pedido: any){
 
         await api.delete(`/api/order/${id_pedido}`).then(response => {
-            alert(response.data.message);
-            window.location.reload()
+            swal("Pedido deletado com sucesso!", "", "success");
+            window.setTimeout(function(){location.reload()}, 4000)
         });
     }
     

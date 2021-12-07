@@ -1,6 +1,8 @@
+/* eslint-disable no-restricted-globals */
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import swal from "sweetalert";
 import api from "../../services/api";
 import "./VisuProd.css"
 
@@ -29,8 +31,8 @@ function VisuProd(){
     async function deleteProd(id_prod: any){
 
         await api.delete(`/api/product/${id_prod}`).then(response => {
-            alert(response.data.message);
-            window.location.reload()
+            swal("O produto foi deletado com sucesso!", "", "success");
+            window.setTimeout(function(){location.reload()}, 4000)
         });
     }
     

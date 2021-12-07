@@ -1,5 +1,7 @@
+/* eslint-disable no-restricted-globals */
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import swal from 'sweetalert';
 import api from '../../../services/api';
 import './VisuContas.css'
 
@@ -26,8 +28,8 @@ function VisuContas(){
     async function deleteCosts(id_despesa: any){
 
         await api.delete(`/api/cost/${id_despesa}`).then(response => {
-            alert(response.data.message);
-            window.location.reload()
+            swal("A despesa foi deletada com sucesso!", "", "success");
+            window.setTimeout(function(){location.reload()}, 4000)
         });
     }
 

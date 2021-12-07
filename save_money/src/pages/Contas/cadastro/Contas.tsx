@@ -1,4 +1,6 @@
+/* eslint-disable no-restricted-globals */
 import React, { FormEvent, useState } from "react";
+import swal from "sweetalert";
 import api from "../../../services/api";
 import "./Contas.css"
 
@@ -16,10 +18,11 @@ function Contas(){
     
         await api.post('/api/costs', dados).then(res => {
             if(res){
-                alert("Cadastro de despesa efetuado!")
-                window.location.reload()
+                swal("Maravilha!", "A despesa foi cadastrada com sucesso.", "success");
+                window.setTimeout(function(){location.reload()}, 3000)
             }else{
-                alert("Cadastro não efetuado")
+                swal("Erro!", "A despesa não foi cadastrada.", "error");
+                window.setTimeout(function(){location.reload()}, 3000)
             }
         });
     }
